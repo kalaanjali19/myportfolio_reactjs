@@ -29,7 +29,7 @@ const Skills = () => {
         </nav>
       </div>
       <section className="hero">
-        <div className="hero-text">
+        <div className= {theme === "light" ? "hero-texts"  : "hero-text"}>
           <h1>Hi, I’m Anjali 👋</h1>
           <p>
             I’m a front-end developer (React Native & React.js) with a focus on

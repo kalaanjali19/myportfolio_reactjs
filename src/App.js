@@ -29,9 +29,10 @@ import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 import './index.css';
 import Navbar from './Components/Navbar';
-
+import { ThemeProvider } from './Context/ThemeContext';
 function App() {
   return (
+    <ThemeProvider>
     <div className="font-sans">
     {/* Include the Navbar at the top */}
     <Navbar />
@@ -53,6 +54,7 @@ function App() {
       <Footer />
     </section>
   </div>
+  </ThemeProvider>
   );
 }
 

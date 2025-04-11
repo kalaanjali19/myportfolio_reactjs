@@ -1,11 +1,9 @@
-/* Navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a;
-  color: white;
+  background-color: var(--nav-bg);
+  color: var(--text-color);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -13,7 +11,7 @@
 }
 
 .logo a {
-  color: white;
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -25,17 +23,16 @@
 }
 
 .nav-links a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #9333ea;
+  color: var(--hover-color);
 }
 
-/* This keeps the menu icon hidden on large screens */
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -46,18 +43,17 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--text-color);
   transition: all 0.3s ease;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #1a1a1a;
+    background-color: var(--nav-bg);
     flex-direction: column;
     align-items: center;
     display: none;
@@ -71,7 +67,6 @@
     display: flex;
   }
 
-  /* Hide nav-links on desktop when mobile menu is closed */
   .navbar .nav-links:not(.active) {
     display: none;
   }

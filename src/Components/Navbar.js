@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Navbar.css';  // Import CSS file for navbar styles
-
+import { useTheme } from '../Context/ThemeContext';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const { theme, toggleTheme } = useTheme()
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -12,6 +12,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <a href="#hero">My Portfolio</a>
+        <button onClick={toggleTheme} className="theme-toggle">
+                {theme === "light" ?  "☀️ Light Mode":"🌙 Dark Mode" }
+              </button>
       </div>
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <a href="#hero">Home</a>

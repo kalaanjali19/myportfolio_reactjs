@@ -1,12 +1,19 @@
 import React from 'react';
 import './Styles.css'
 import projectImg from "../assets/Rectangle.png"
+import Rectangle1 from "../assets/Rectangle1.png"
+import Rectangle2 from "../assets/Rectangle2.png"
+import Rectangle3 from "../assets/Rectangle3.png"
+import Rectangle4 from "../assets/Rectangle4.png"
+import Rectangle5 from "../assets/Rectangle5.png"
 
-const projects = new Array(6).fill({
-  title: 'Project Title goes here',
+const projectImages = [projectImg, Rectangle4, Rectangle3, Rectangle1, Rectangle5,Rectangle2];
+
+const projects = projectImages.map((img, index) => ({
+  title: `Project Title ${index + 1}`,
   description: 'Short description of the project, what it does, and technologies used.',
-  image: projectImg,
-});
+  image: img,
+}));
 
 const Projects = () => {
   return (

@@ -14,16 +14,16 @@ const Navbar = () => {
       <div className="logo">
         <a href="#hero">My Portfolio</a>
         <button onClick={toggleTheme} className="theme-toggle">
-                {theme === "light" ?  "☀️":"🌙" }
-              </button>
-  
+          {theme === "light" ? "☀️" : "🌙"}
+        </button>
+
 
       </div>
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <a href="#hero">Home</a>
-        <a href="#tech-stack">Tech Stack</a>
-        <a href="#projects">Projects</a>
-        <a href="#footer">Contact</a>
+        <a href="#hero" onClick={() => setIsMenuOpen(false)}>Home</a>
+        <a href="#tech-stack" onClick={() => setIsMenuOpen(false)}>Tech Stack</a>
+        <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+        <a href="#footer" onClick={() => setIsMenuOpen(false)}>Contact</a>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
         <span className="bar"></span>

@@ -49,25 +49,41 @@
 
 @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
     background-color: var(--nav-bg);
     flex-direction: column;
-    align-items: center;
-    display: none;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+    display: flex;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
   }
 
   .nav-links.active {
-    display: flex;
+    right: 0;
+    background-color: red; /* change this as needed */
   }
 
   .menu-icon {
     display: flex;
+    cursor: pointer;
+    z-index: 1000;
   }
 
   .navbar .nav-links:not(.active) {
-    display: none;
+    right: -100%;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
   }
 }
+

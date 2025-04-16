@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="logo">
         <a href="#hero">My Portfolio</a>
         <button onClick={toggleTheme} className="theme-toggle">
-                {theme === "light" ?  "☀️ Light Mode":"🌙 Dark Mode" }
+                {theme === "light" ?  "☀️":"🌙" }
               </button>
   
 
@@ -25,9 +25,6 @@ const Navbar = () => {
         <a href="#projects">Projects</a>
         <a href="#footer">Contact</a>
       </div>
-      <a href="https://example.com/cv.pdf" target="_blank" rel="noopener noreferrer" download>
-  <button>Download CV</button>
-</a>
       <div className="menu-icon" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>

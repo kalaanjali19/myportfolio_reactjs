@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero-section">
       <div className="hero-text">
         <h4>Hi 👋,</h4>
-        <h1>My name is Pavan MG</h1>
+        <h1>My name is Anjali Kala</h1>
         <p>I build things for web</p>
         <div className="hero-icons">
           <FaGithub />

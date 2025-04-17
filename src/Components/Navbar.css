@@ -10,7 +10,7 @@ body.dark {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d56bae;
+  background-color: blue;
   color: white;
   padding: 1rem 2rem;
   position: sticky;
@@ -73,7 +73,7 @@ body.dark {
   right: -100%;
   width: 250px;
   height: 100vh;
-  background-color: #d56bc7;
+  background-color: #e62214fe;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

@@ -16,7 +16,7 @@ const icons = [
   { Icon: SiVite, color: '#646CFF' },    // Vite Color
   { Icon: FaGitAlt, color: '#F1502F' },  // Git Color
   { Icon: FaMicrosoft, color: '#7A7A7A' }, // Microsoft Color (for Visual Studio)
-  { Icon: FaGithub, color: '#333' },     // GitHub Color
+  { Icon: FaGithub, color:'#61DBFB' },     // GitHub Color
 ];
 
 const TechStack = () => {

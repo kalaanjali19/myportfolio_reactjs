@@ -26,11 +26,14 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   text-align: center; 
+  font-family: Preahvihear, sans-serif;
 }
 .hero-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--text-color);
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
 }
 @media (max-width: 768px) {
   .About-section {
@@ -54,24 +57,25 @@ body {
     text-align: center;
   }
 }
-
 .hero-text h4 {
   font-size: 1.5rem;
   color: var(--text-color);
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
 }
-
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
 }
-
 .hero-text p {
   font-size: 1.2rem;
   color: var(--text-color);
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
 }
-
-
 .hero-icons {
   display: flex;
   justify-content: center;
@@ -84,7 +88,6 @@ body {
   color: var(--text-color);
   transition: color 0.3s ease;
 }
-
 .hero-image {
   width: 250px;
   height: 250px;
@@ -137,12 +140,16 @@ body {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--text-color);
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
 }
 
 .tech-section p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: var(--text-color);
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
 }
 
 .tech-icons {
@@ -195,13 +202,16 @@ body {
 
 .projects-section h2 {
   font-size: 2rem;
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 
 .projects-section p {
   font-size: 1.2rem;
-
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
   color: var(--text-color);
 }
 

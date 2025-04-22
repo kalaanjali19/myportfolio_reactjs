@@ -10,8 +10,8 @@ body.dark {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blue;
-  color: white;
+  background-color:var(--bg-color);
+  color:var(--text-color);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -21,7 +21,7 @@ body.dark {
   background-color: #333;
 }
 .logo a {
-  color: white;
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -32,7 +32,7 @@ body.dark {
   align-items: center;
 }
 .nav-links a, .theme-btn {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
@@ -64,7 +64,7 @@ body.dark {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--text-color);
   transition: all 0.3s ease;
 }
 .mobile-drawer {
@@ -73,7 +73,7 @@ body.dark {
   right: -100%;
   width: 250px;
   height: 100vh;
-  background-color: #e62214fe;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -88,7 +88,7 @@ body.dark {
   right: 0;
 }
 .mobile-drawer a, .mobile-drawer .cv-btn {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 .drawer-header {
@@ -97,7 +97,7 @@ body.dark {
 }
 .close-btn {
   font-size: 2rem;
-  color: white;
+  color:var(--text-color);
   cursor: pointer;
 }
 .theme-toggle {

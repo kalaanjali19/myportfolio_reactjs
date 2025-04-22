@@ -18,6 +18,36 @@ body {
   color: var(--text-color);
   text-align: center;
 }
+.About-section {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center; 
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+@media (max-width: 768px) {
+  .About-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+}
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column-reverse;
@@ -40,6 +70,7 @@ body {
   font-size: 1.2rem;
   color: var(--text-color);
 }
+
 
 .hero-icons {
   display: flex;
@@ -157,7 +188,7 @@ body {
 /* ========================= PROJECTS SECTION ========================= */
 .projects-section {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -170,7 +201,7 @@ body {
 
 .projects-section p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+
   color: var(--text-color);
 }
 
@@ -187,7 +218,7 @@ body {
 .project-card {
   background-color: var(--bg-color);
   /* border-radius: 12px; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow:  var(--box-shadow-theme);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   cursor: pointer;
@@ -205,24 +236,24 @@ body {
 
 .project-info {
   padding: 1.5rem;
-  background-color: blue;
+  background-color:var(--bg-color);
 }
 
 .project-info h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color:#ffffff;;
+  color:var(--text-color);
 }
 
 .project-info p {
   font-size: 1rem;
-  color:#ffffff;
+  color:var(--text-color);
   margin-bottom: 1.5rem;
 }
 
 .project-info a {
   font-size: 1rem;
-  color:#ffffff;;
+  color:var(--text-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -290,6 +321,7 @@ body {
   align-items: center;
   min-width: max-content;
   justify-content: center;
+  padding: 15px;
 }
 
 .filter-btn {
@@ -304,7 +336,7 @@ body {
 
 
 .filter-btn.active {
-  background: #3b82f6;
+  background:blue;
 }
 
 .search-bar {
@@ -342,7 +374,7 @@ body {
 }
 
 .project-card {
-  background-color: red;
+  background-color:var(--bg-color);
   border-radius: 12px;
   overflow: hidden;
   padding-bottom: 1rem;
@@ -390,5 +422,5 @@ body {
   padding: 0 1rem;
   margin-top: 1rem;
   align-items: center;
-  background-color: blue;
+  background-color:var(--bg-color);
 }

@@ -9,67 +9,13 @@ const Skills = () => {
   const { theme, toggleTheme } = useTheme()
   return (
     <div>
-      <div className="portfolio-container">
-        <nav className="navbar">
-          <ul className="nav-links">
-          <li><Link to="/about">About</Link></li>
-          <li><a href="#work">Work</a></li>
-            <li><a href="#about">Testimonials</a></li>
-            <li><a href="#about">Contact</a></li>
-            <li>
-              <button className="download-btn">Download CV</button>
-            </li>
-            <li>
-              <button onClick={toggleTheme} className="theme-toggle">
-                {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
-              </button>
-              
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <section className="hero">
-        <div className= {theme === "light" ? "hero-texts"  : "hero-text"}>
-          <h1>Hi, I’m Anjali 👋</h1>
-          <p>
-            I’m a front-end developer (React Native & React.js) with a focus on
-            creating (and occasionally designing) exceptional digital
-            experiences that are fast, accessible, visually appealing, and
-            responsive. Even though I’ve been building mobile applications for
-            over 3 years, I still love it as if it were something new.
-          </p>
-          <div className="hero-details">
-            <span>📍 Hyderabed, India</span>
-            <span>✅ Available for new projects</span>
-          </div>
-        </div>
-         <div className="socials">
-                  <a href="mailto:you@example.com" className="icon-box">
-                    <MdAlternateEmail />
-                  </a>
-                  <a
-                    href="https://github.com/yourusername"
-                    target="_blank"
-                    rel="noopener noreferrerI"
-                    className="icon-box"
-                  >
-                    <FaGithub />
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/yourusername"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon-box"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </div>
-      </section>
+      
+
       <section id="about" className="about-section">
-          <h1>About Me</h1>
+        
         <div className="about-img">
         <img
-          src="https://img.freepik.com/premium-vector/developer-smart-woman-with-white-hair-works-laptop-3d-rendered-icon-isolated_831490-5401.jpg"
+          src="https://storage.googleapis.com/byprogrammers/image/cricket-live-score-app.png"
           alt="Profile"
           className="profile-img"
         />
@@ -106,7 +52,7 @@ const Skills = () => {
         </div>
       </section>
 
-      <section id="work" className="work-section">
+      {/* <section id="work" className="work-section">
      <div>
          <h1>Work Experience</h1>
      </div>
@@ -148,7 +94,7 @@ const Skills = () => {
           className="profile-img"
         />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${theme}`}>
       <div className="logo">
-        <a href="#hero">MyPortfolio</a>
+        <a href="#hero">#Anjali</a>
       </div>
       <div className="nav-links">
         <a href="#About" className={getLinkClass('About')}>About</a>
@@ -73,7 +73,9 @@ const Navbar = () => {
         <a href="#tech-stack" onClick={toggleMenu} className={getLinkClass('tech-stack')}>Tech Stack</a>
         <a href="#projects" onClick={toggleMenu} className={getLinkClass('projects')}>Projects</a>
         <a href="#footer" onClick={toggleMenu} className={getLinkClass('footer')}>Contact</a>
+        <a href="/Anjali_Resume.pdf" download>
         <button className="cv-btn">Download CV</button>
+        </a>
         <div className="theme-toggle">
           <div className="theme-text">
             {theme === 'light' ? <FiMoon size={20} color="black" /> : <FiSun size={20} color="white" />}

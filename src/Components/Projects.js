@@ -7,6 +7,7 @@ import Rectangle2 from "../assets/Rectangle2.png"
 import Rectangle3 from "../assets/Rectangle3.png"
 import Rectangle4 from "../assets/Rectangle4.png"
 import Rectangle5 from "../assets/Rectangle5.png"
+import { Link } from 'react-router-dom';
 
 const projectImages = [projectImg, Rectangle4, Rectangle3, Rectangle1, Rectangle5,Rectangle2];
 const allCategories = ['All', 'web app', 'machine learning', 'android app', 'blockchain'];
@@ -104,12 +105,14 @@ const Projects = () => {
        <div className="projects-grid">
         {filteredProjects.map(project => (
           <div className="project-card" key={project.id}>
+             <Link to={`/Skills`} className="no-underline">
             <img src={project.image} alt={project.title} />
             <div className="project-info">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <a href="#">View Project →</a>
           </div>
+          </Link>
           </div>
         ))}
       </div>
